@@ -1,0 +1,79 @@
+<TYPE html> <!-- Объявление формата документа -->
+<html>
+<head> <!-- Техническая информация о документе -->
+<meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+<title>Buy Actions | Sell Actions</title> <!-- Задаем заголовок документа -->
+<link rel="stylesheet" type="text/css" href="dis.css"> <!-- Подключаем внешнюю таблицу стилей -->
+<script src="scr.js"></script> <!-- Подключаем сценарии -->
+</head>
+<body> <!-- Основная часть документа -->
+<h1 id="myHeader">ACTIONS THE MOST FAST ME</h1>
+<center>
+<h1 id="myHeade">new</h1>
+</center>
+<center>
+<input type="text" class="lal" id="a" />
+<input type="text" class="lal" id="b" />
+<input type="text" class="lal" id="c" />
+<input type="text" class="lal" id="d" />
+<input type="text" class="lal" id="e" />
+</center>
+<center>
+<h1 id="myHeade">old</h1>
+</center>
+<center>
+<input type="text" class="lal" id="fa" />
+<input type="text" class="lal" id="fb" />
+<input type="text" class="lal" id="fc" />
+<input type="text" class="lal" id="fd" />
+<input type="text" class="lal" id="fe" />
+</center>
+<center><h1 id="test">Итог:</h1></center>
+<center><button class="button button5" onclick="func()">Send</button></center>
+<center><h1 id="myHea">Актуальная сумма пакета: <p id="resul"></p></h1></center>
+<center><h1 id="myHea">Начальная сумма пакета: <p id="result"></p></h1></center>
+<center><h1 id="myHea">Изменился на: <p id="prs"></p></h1></center>
+<center><h1 id="myHea">%: <p id="pr"></p></h1></center>
+<script>
+  var op; //выбранный оператор
+  function func() {
+    var result;
+    var a = Number(document.getElementById("a").value);
+	var b = Number(document.getElementById("b").value);
+	var c = Number(document.getElementById("c").value);
+	var d = Number(document.getElementById("d").value);
+	var e = Number(document.getElementById("e").value);
+	var fa = Number(document.getElementById("fa").value);
+	var fb = Number(document.getElementById("fb").value);
+	var fc = Number(document.getElementById("fc").value);
+	var fd = Number(document.getElementById("fd").value);
+	var fe = Number(document.getElementById("fe").value);
+	
+	var sum = a + b + c + d + e
+	var fsum = fa + fb + fc + fd + fe
+	var ism = sum - fsum
+	
+	var temp = sum / 100
+	var pros = fsum * temp
+	var pro = pros - 100
+	
+    
+    result = fsum;
+	resul = sum;
+	prs = ism;
+	pr = pro;
+    document.getElementById("result").innerHTML = result;
+	document.getElementById("resul").innerHTML = resul;
+	document.getElementById("prs").innerHTML = prs;
+	document.getElementById("pr").innerHTML = pr;
+  }
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+</body>
+</html>
